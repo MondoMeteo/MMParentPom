@@ -2,18 +2,19 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.staniscia</groupId>
-	<artifactId>ast-parent-pom</artifactId>
+	<groupId>org.mondometeo</groupId>
+	<artifactId>MMParentPom</artifactId>
 	<packaging>pom</packaging>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 
-	<name>AST parent pom</name>
-	<description>the Alessandro STaniscia Maven parent pom  used for all software made by Alessandro Staniscia</description>
-	<url>http://www.staniscia.net</url>
+	<name>MMParentPom</name>
+	<description>The Maven parent pom  used for all software made by MondoMeteo</description>
+	<url>http://www.mondometeo.org</url>
+        <inceptionYear>2011</inceptionYear>
 
 	<organization>
-		<name>Alessandro Staniscia</name>
-		<url>http://www.staniscia.net</url>
+		<name>MondoMeteo</name>
+		<url>http://www.mondometeo.org</url>
 	</organization>
 
 	<developers>
@@ -21,32 +22,36 @@
 			<id>Odyno</id>
 			<name>Alessandro Staniscia</name>
 			<email>alessandro@staniscia.net</email>
-			<roles>
-				<role>Architect</role>
-			</roles>
-			<organization>staniscia.net</organization>
+			<organization>mondometeo.org</organization>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>micder</id>
+			<name>Michele de Rosa</name>
+			<email>michele@mondometeo.org</email>
+			<organization>mondometeo.org</organization>
 			<timezone>+1</timezone>
 		</developer>
 	</developers>
 
 	<distributionManagement>
-		<downloadUrl>http://www.staniscia.net/repository/release</downloadUrl>
+		<downloadUrl>http://www.mondometeo.org/mvn-repository/release</downloadUrl>
 		<site>
-			<id>ftp-repository-site</id>
-			<name>staniscia.net Website</name>
-			<url>ftp://ftp.staniscia.net/htdocs/mvn-sites/</url>
+			<id>ftp-mm-mvn-site</id>
+			<name>mondometeo.org Website</name>
+			<url>ftp://ftp.mondometeo.org/htdocs/develop/mvn-sites/</url>
 		</site>
 		<repository>
 			<uniqueVersion>false</uniqueVersion>
-			<id>ftp-repository-stable</id>
-			<url>ftp://ftp.staniscia.net/htdocs/repository/release</url>
+			<id>ftp-mm-mvm-repository-stable</id>
+			<url>ftp://ftp.mondometeo.org/htdocs/mvn-repository/release</url>
 			<layout>default</layout>
 		</repository>
 		<snapshotRepository>
 			<uniqueVersion>true</uniqueVersion>
-			<id>ftp-repository-snapshot</id>
+			<id>ftp-mm-mvn-repository-snapshot</id>
 			<name>Propellors Snapshots</name>
-			<url>ftp://ftp.staniscia.net/htdocs/repository/snapshot</url>
+			<url>ftp://ftp.mondometeo.org/htdocs/mvn-repository/snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -54,7 +59,6 @@
 	<reporting>
 		<plugins>
 			<!-- reportistica -->
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
